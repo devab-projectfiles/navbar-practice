@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- swiper api css -->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- swiper js -->
+    <script src="swiper-bundle.min.js" defer></script>
+    <script src="scrpit.js" defer></script>
+    <title>navigation bars</title>
+  </head>
+  <body>
+    <nav>
+      <div class="icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="28px"
+          viewBox="0 -960 960 960"
+          width="28px"
+          fill="#e8eaed"
+        >
+          <path
+            d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
+          />
+        </svg>
+      </div>
+      <input type="checkbox" id="sidebar" />
+
+      <label for="sidebar" class="opensidebar">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          fill="#e8eaed"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+      </label>
+      <label class="overlay" for="sidebar"></label>
+      <div class="linktainer">
+        <label for="sidebar" class="closesidebar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="32px"
+            fill="#e8eaed"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </label>
+
+        <a class="home" href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Blog</a>
+        <a href="#">Login</a>
+      </div>
+    </nav>
+    <div class="cover"></div>
+
+    <!-- search bar and body section  -->
+    <section>
+      <div class="fdrop">
+        <ul class="flist">
+          <li>wedetach</li>
+          <li class="dropup">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000000"
+            >
+              <path
+                d="M246.67-433.33 200-480l280-280 280 280-46.67 46.67L480-665.67 246.67-433.33Z"
+              />
+            </svg>
+          </li>
+          <li class="dropdown">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="27px"
+              viewBox="0 -960 960 960"
+              width="27px"
+              fill="#000000"
+            >
+              <path
+                d="M480-344 240-584l47.33-47.33L480-438.67l192.67-192.66L720-584 480-344Z"
+              />
+            </svg>
+          </li>
+        </ul>
+        <ul class="slist">
+          <li class="fd">hospital</li>
+          <li class="fd">school</li>
+          <li class="fd">transportation</li>
+        </ul>
+      </div>
+
+      <div class="dropone">
+        <div class="select">
+          <div class="selected">Select the bottom option</div>
+          <div class="iconn"></div>
+        </div>
+        <ul class="menu">
+          <li class="lists">Framer</li>
+          <li class="lists">sketch</li>
+          <li class="lists">Invision studio</li>
+          <li class="lists">Figma</li>
+          <li class="lists">Adobe XD</li>
+        </ul>
+      </div>
+
+      <div
+        class="slider"
+        style="--width: 300px; --height: 649.27px; --quantity: 6"
+      >
+        <div class="list">
+          <div class="item" style="--position: 1">
+            <img src="images/274x593 (3).jpg" alt="" />
+          </div>
+          <div class="item" style="--position: 2">
+            <img src="images/274x593 (2).jpg" alt="" />
+          </div>
+          <div class="item" style="--position: 3">
+            <img src="images/274x593 (4).jpg" alt="" />
+          </div>
+          <div class="item" style="--position: 4">
+            <img src="images/274x593 (5).jpg" alt="" />
+          </div>
+          <div class="item" style="--position: 5">
+            <img src="images/274x593 (6).jpg" alt="" />
+          </div>
+          <div class="item" style="--position: 6">
+            <img src="images/274x593 (7).jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div
+        reverse="true"
+        class="slider"
+        style="--width: 100px; --height: 100px; --quantity: 4"
+      >
+        <div class="list">
+          <div class="item q" style="--position: 1">
+            <img src="images/114x114SC.DN01 (1).jpg" alt="" />
+          </div>
+          <div class="item q" style="--position: 2">
+            <img src="images/114x114SC.DN01.jpg" alt="" />
+          </div>
+          <div class="item p" style="--position: 3">
+            <img src="images/238x134 (1).jpg" alt="" />
+          </div>
+          <div class="item p" style="--position: 4">
+            <img src="images/238x134.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- swipe slider -->
+
+    <section class="second">
+      <div class="slider-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card2 swiper-slide">
+              <div class="image-content">
+                <span class="overlaynn"> </span>
+                <div class="card-image">
+                  <img src="logos/images (1).jfif" alt="" />
+                </div>
+              </div>
+              <div class="textnew">
+                <h2 class="nameof">David wright</h2>
+                <p class="discription">
+                  It"s all about me and you. but I don"t understand whay I'm
+                  doing this kind of thing. Now in this world the only possible
+                  thing that we could do is what we are writing.
+                </p>
+                <button class="buicon">View more</button>
+              </div>
+            </div>
+            <div class="card2 swiper-slide">
+              <div class="image-content">
+                <span class="overlaynn"> </span>
+                <div class="card-image">
+                  <img src="logos/images (1).jfif" alt="" />
+                </div>
+              </div>
+              <div class="textnew">
+                <h2 class="nameof">David wright</h2>
+                <p class="discription">
+                  It"s all about me and you. but I don"t understand whay I'm
+                  doing this kind of thing. Now in this world the only possible
+                  thing that we could do is what we are writing.
+                </p>
+                <button class="buicon">View more</button>
+              </div>
+            </div>
+            <div class="card2 swiper-slide">
+              <div class="image-content">
+                <span class="overlaynn"> </span>
+                <div class="card-image">
+                  <img src="logos/images1.jfif" alt="" />
+                </div>
+              </div>
+              <div class="textnew">
+                <h2 class="nameof">David wright</h2>
+                <p class="discription">
+                  It"s all about me and you. but I don"t understand whay I'm
+                  doing this kind of thing. Now in this world the only possible
+                  thing that we could do is what we are writing.
+                </p>
+                <button class="buicon">View more</button>
+              </div>
+            </div>
+            <div class="card2 swiper-slide">
+              <div class="image-content">
+                <span class="overlaynn"> </span>
+                <div class="card-image">
+                  <img src="logos/images1.jfif" alt="" />
+                </div>
+              </div>
+              <div class="textnew">
+                <h2 class="nameof">David wright</h2>
+                <p class="discription">
+                  It"s all about me and you. but I don"t understand whay I'm
+                  doing this kind of thing. Now in this world the only possible
+                  thing that we could do is what we are writing.
+                </p>
+                <button class="buicon">View more</button>
+              </div>
+            </div>
+            <div class="card2 swiper-slide">
+              <div class="image-content">
+                <span class="overlaynn"> </span>
+                <div class="card-image">
+                  <img src="logos/images1.jfif" alt="" />
+                </div>
+              </div>
+              <div class="textnew">
+                <h2 class="nameof">David wright</h2>
+                <p class="discription">
+                  It"s all about me and you. but I don"t understand whay I'm
+                  doing this kind of thing. Now in this world the only possible
+                  thing that we could do is what we are writing.
+                </p>
+                <button class="buicon">View more</button>
+              </div>
+            </div>
+            <div class="card2 swiper-slide">
+              <div class="image-content">
+                <span class="overlaynn"> </span>
+                <div class="card-image">
+                  <img src="logos/images1.jfif" alt="" />
+                </div>
+              </div>
+              <div class="textnew">
+                <h2 class="nameof">David wright</h2>
+                <p class="discription">
+                  It"s all about me and you. but I don"t understand whay I'm
+                  doing this kind of thing. Now in this world the only possible
+                  thing that we could do is what we are writing.
+                </p>
+                <button class="buicon">View more</button>
+              </div>
+            </div>
+            <div class="card2 swiper-slide">
+              <div class="image-content">
+                <span class="overlaynn"> </span>
+                <div class="card-image">
+                  <img src="logos/images/274x593 (2).jpg" alt="" />
+                </div>
+              </div>
+              <div class="textnew">
+                <h2 class="nameof">David wright</h2>
+                <p class="discription">
+                  It"s all about me and you. but I don"t understand whay I'm
+                  doing this kind of thing. Now in this world the only possible
+                  thing that we could do is what we are writing.
+                </p>
+                <button class="buicon">View more</button>
+              </div>
+            </div>
+            <div class="card2 swiper-slide">
+              <div class="image-content">
+                <span class="overlaynn"> </span>
+                <div class="card-image">
+                  <img src="logos/images.jfif" alt="" />
+                </div>
+              </div>
+              <div class="textnew">
+                <h2 class="nameof">David wright</h2>
+                <p class="discription">
+                  It"s all about me and you. but I don"t understand whay I'm
+                  doing this kind of thing. Now in this world the only possible
+                  thing that we could do is what we are writing.
+                </p>
+                <button class="buicon">View more</button>
+              </div>
+            </div>
+            <div class="card2 swiper-slide">
+              <div class="image-content">
+                <span class="overlaynn"> </span>
+                <div class="card-image">
+                  <img src="logos/images (2).jfif" alt="" />
+                </div>
+              </div>
+              <div class="textnew">
+                <h2 class="nameof">David wright</h2>
+                <p class="discription">
+                  It"s all about me and you. but I don"t understand whay I'm
+                  doing this kind of thing. Now in this world the only possible
+                  thing that we could do is what we are writing.
+                </p>
+                <button class="buicon">View more</button>
+              </div>
+            </div>
+            <div class="card2 swiper-slide">
+              <div class="image-content">
+                <span class="overlaynn"> </span>
+                <div class="card-image">
+                  <img src="logos/images.jfif" alt="" />
+                </div>
+              </div>
+              <div class="textnew">
+                <h2 class="nameof">David wright</h2>
+                <p class="discription">
+                  It"s all about me and you. but I don"t understand whay I'm
+                  doing this kind of thing. Now in this world the only possible
+                  thing that we could do is what we are writing.
+                </p>
+                <button class="buicon">View more</button>
+              </div>
+            </div>
+            <div class="card2 swiper-slide">
+              <div class="image-content">
+                <span class="overlaynn"> </span>
+                <div class="card-image">
+                  <img src="logos/images.jfif" alt="" />
+                </div>
+              </div>
+              <div class="textnew">
+                <h2 class="nameof">David wright</h2>
+                <p class="discription">
+                  It"s all about me and you. but I don"t understand whay I'm
+                  doing this kind of thing. Now in this world the only possible
+                  thing that we could do is what we are writing.
+                </p>
+                <button class="buicon">View more</button>
+              </div>
+            </div>
+            <div class="card2 swiper-slide">
+              <div class="image-content">
+                <span class="overlaynn"> </span>
+                <div class="card-image">
+                  <img src="logos/images.jfif" alt="" />
+                </div>
+              </div>
+              <div class="textnew">
+                <h2 class="nameof">David wright</h2>
+                <p class="discription">
+                  It"s all about me and you. but I don"t understand whay I'm
+                  doing this kind of thing. Now in this world the only possible
+                  thing that we could do is what we are writing.
+                </p>
+                <button class="buicon">View more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </body>
+</html>
